@@ -34,6 +34,9 @@ public class MainViewTest {
         // MockVaadin.setup() registers all @Routes, prepares the Vaadin instances for us
         // (the UI, the VaadinSession, VaadinRequest, VaadinResponse, ...) and navigates to the root route.
         MockVaadin.setup(routes);
+
+        // no need - Karibu-Testing will automatically navigate to view mapped to the root path "/".
+//        UI.getCurrent().navigate(MainView.class);
     }
 
     @AfterEach
