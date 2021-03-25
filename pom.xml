@@ -16,7 +16,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <failOnMissingWebXml>false</failOnMissingWebXml>
 
-        <vaadin.version>14.4.9</vaadin.version>
+        <vaadin.version>14.5.1</vaadin.version>
         <jetty.version>9.4.31.v20200723</jetty.version>
         <junit.jupiter.version>5.7.0</junit.jupiter.version>
     </properties>
@@ -174,6 +174,9 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <pnpmEnable>true</pnpmEnable>
+                </configuration>
             </plugin>
 
             <!-- JUnit 5 requires Surefire version 2.22.0 or higher -->
@@ -215,6 +218,9 @@
                                 <phase>compile</phase>
                             </execution>
                         </executions>
+                        <configuration>
+                            <pnpmEnable>true</pnpmEnable>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
